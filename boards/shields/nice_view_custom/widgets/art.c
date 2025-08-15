@@ -1142,6 +1142,10 @@ const lv_img_dsc_t corro12 = {
   .data = corro12_map,
 };
 
+#ifndef LV_ATTRIBUTE_IMG_NEW_PISKEL
+#define LV_ATTRIBUTE_IMG_NEW_PISKEL
+#endif
+
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_NEW_PISKEL uint8_t New_Piskel_map[] = {
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
 	0xff, 0xff, 0xff, 0xff, /*Color of index 0*/
@@ -1219,7 +1223,7 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_NEW_PISKE
   0x00, 0x00
 };
 
-const lv_img_dsc_t New_Piskel_map = {
+const lv_img_dsc_t New_Piskel = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
